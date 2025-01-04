@@ -74,9 +74,122 @@
             <div class="col-12 text-center">
               <h2 class="fs-3">Framework Overview</h2>
               <hr class="mt-0">
-              <img class="img-fluid" src="img/framework.png">
-              <hr>
+              <img class="img-fluid mb-3" src="img/framework.png" alt="Framework Image">
               <p class="text-start">HOSER predicts the next spatio-temporal point based on the current state and generates the trajectory between the given OD pair through a search-based method. As illustrated above, HOSER first employs a Road Network Encoder to model the road network at different levels. Based on the road network representation, a Multi-Granularity Trajectory Encoder is proposed to extract the semantic information from the current partial trajectory. To better incorporate prior knowledge of human mobility, a Destination-Oriented Navigator is used to seamlessly integrate the current partial trajectory semantics with the destination guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Heatmap Visualization of Generated and Real Trajectories</h2>
+              <hr class="mt-0">
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <div class="row small">
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/Beijing/Ours.png" alt="Ours trajectories heatmap in Beijing">
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/Beijing/Real.png" alt="Real trajectories heatmap in Beijing">
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">Beijing</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <div class="row small">
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/Porto/Ours.png" alt="Ours trajectories heatmap in Porto">
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/Porto/Real.png" alt="Real trajectories heatmap in Porto">
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">Porto</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-8 offset-lg-2">
+              <div class="row small">
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/San_Francisco/Ours.png" alt="Ours trajectories heatmap in San Francisco">
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <img class="img-fluid" src="img/heatmap/San_Francisco/Real.png" alt="Real trajectories heatmap in San Francisco">
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">San Francisco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Visualization of Generated and Real Trajectories with Identical OD Pairs</h2>
+              <hr class="mt-0">
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-10 offset-lg-1">
+              <div class="row small">
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=1wPKDxd15PEN3O-1phVJkdVAIckwT5y4&ehbc=2E312F&noprof=1&z=12" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=1-_KZFscbRPvL8oRenYTq9LLLikr6Mhc&ehbc=2E312F&noprof=1&z=12" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">Beijing</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-10 offset-lg-1">
+              <div class="row small">
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=1S1NNGyhKjkMUXNJ2LyQsFAjqtBOs6Q4&ehbc=2E312F&noprof=1" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=177An5dJ9UI8mVnIX6mPN0tkXpOZzDiA&ehbc=2E312F&noprof=1" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">Porto</p>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-12 col-lg-10 offset-lg-1">
+              <div class="row small">
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=1l76DYh_okeF2keleERkzjCSWmOR3OvM&ehbc=2E312F&noprof=1" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(a) Ours</p>
+                </div>
+                <div class="col-6">
+                  <iframe src="https://www.google.com/maps/d/embed?mid=1pGj9Iw5Zr-sOqgzorzbrp5zSWdYaYhY&ehbc=2E312F&noprof=1" height="480" class="w-100"></iframe>
+                  <p class="mb-0">(b) Real</p>
+                </div>
+              </div>
+              <p class="mb-4">San Francisco</p>
             </div>
           </div>
         </div>
@@ -93,8 +206,8 @@
 <code>@inproceedings{cao2025hoser,
   title={Holistic Semantic Representation for Navigational Trajectory Generation},
   author={Cao, Ji and Zheng, Tongya and Guo, Qinghong and Wang, Yu and Dai, Junshu and Liu, Shunyu and Yang, Jie and Song, Jie and Song, Mingli},
-  booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
-  year = {2025},
+  booktitle={AAAI Conference on Artificial Intelligence (AAAI)},
+  year={2025},
 }</code>
 </pre>
             </div>
