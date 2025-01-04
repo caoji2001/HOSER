@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holistic Semantic Representation for Navigational Trajectory Generation</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="p-5 mb-4" style="background-color: #ebf0f1;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 class="fs-2">Holistic Semantic Representation for Navigational Trajectory Generation</h1>
+              <p class="fs-4 text-muted">AAAI 2025</p>
+              <hr>
+              <p>
+                Ji Cao<sup>1</sup>,
+                Tongya Zheng<sup>2,3,*</sup>,
+                Qinghong Guo<sup>1</sup>,
+                Yu Wang<sup>1</sup>,
+                Junshu Dai<sup>1</sup>,
+                <br>
+                Shunyu Liu<sup>4</sup>,
+                Jie Yang<sup>1</sup>,
+                Jie Song<sup>1</sup>,
+                Mingli Song<sup>3,5</sup>,
+              </p>
+              <p>
+                <sup>1</sup>Zhejiang University
+                <sup>2</sup>Big Graph Center, Hangzhou City University
+                <br>
+                <sup>3</sup>State Key Laboratory of Blockchain and Data Security, Zhejiang University
+                <sup>4</sup>Nanyang Technological Univerisity
+                <br>
+                <sup>5</sup>Hangzhou High-Tech Zone (Binjiang) Institute of Blockchain and Data Security
+              </p>
+              <p>
+                <sup>*</sup> denotes the corresponding author
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="#" class="btn btn-dark me-4">
+                <i class="bi bi-file-earmark"></i> Paper
+              </a>
+              <a href="https://github.com/caoji2001/HOSER" class="btn btn-dark" target="_blank">
+                <i class="bi bi-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Abstract</h2>
+              <hr class="mt-0">
+              <p class="text-start">Trajectory generation has garnered significant attention from researchers in the field of spatio-temporal analysis, as it can generate substantial synthesized human mobility trajectories that enhance user privacy and alleviate data scarcity. However, existing trajectory generation methods often focus on improving trajectory generation quality from a singular perspective, lacking a comprehensive semantic understanding across various scales. Consequently, we are inspired to develop a <b>HO</b>listic <b>SE</b>mantic <b>R</b>epresentation (HOSER) framework for navigational trajectory generation. Given an origin-and-destination (OD) pair and the starting time point of a latent trajectory, we first propose a Road Network Encoder to expand the receptive field of road- and zone-level semantics. Second, we design a Multi-Granularity Trajectory Encoder to integrate the spatio-temporal semantics of the generated trajectory at both the point and trajectory levels. Finally, we employ a Destination-Oriented Navigator to seamlessly integrate destination-oriented guidance. Extensive experiments on three real-world datasets demonstrate that HOSER outperforms <em>state-of-the-art</em> baselines by a significant margin. Moreover, the model's performance in few-shot learning and zero-shot learning scenarios further verifies the effectiveness of our holistic semantic representation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Framework Overview</h2>
+              <hr class="mt-0">
+              <img class="img-fluid" src="img/framework.png">
+              <hr>
+              <p class="text-start">HOSER predicts the next spatio-temporal point based on the current state and generates the trajectory between the given OD pair through a search-based method. As illustrated above, HOSER first employs a Road Network Encoder to model the road network at different levels. Based on the road network representation, a Multi-Granularity Trajectory Encoder is proposed to extract the semantic information from the current partial trajectory. To better incorporate prior knowledge of human mobility, a Destination-Oriented Navigator is used to seamlessly integrate the current partial trajectory semantics with the destination guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Citation</h2>
+              <hr class="mt-0">
+<pre class="text-start p-4" style="background-color: #e9eeef;">
+<code>@inproceedings{cao2025hoser,
+  title={Holistic Semantic Representation for Navigational Trajectory Generation},
+  author={Cao, Ji and Zheng, Tongya and Guo, Qinghong and Wang, Yu and Dai, Junshu and Liu, Shunyu and Yang, Jie and Song, Jie and Song, Mingli},
+  booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
+  year = {2025},
+}</code>
+</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="mb-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="fs-3">Acknowledgments</h2>
+              <hr class="mt-0">
+              <p class="text-start">This work is supported by the Zhejiang Province "JianBingLingYan+X" Research and Development Plan (2024C01114), Zhejiang Province High-Level Talents Special Support Program "Leading Talent of Technological Innovation of Ten-Thousands Talents Program" (No.2022R52046), the Fundamental Research Funds for the Central Universities (No.226-2024-00058), and the Scientific Research Fund of Zhejiang Provincial Education Department (Grant No.Y202457035). Also, we thank Bayou Tech (Hong Kong) Limited for providing the data used in this paper free of charge.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
