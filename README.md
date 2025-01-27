@@ -38,7 +38,7 @@ loguru
 
 * Data Preprocessing
   
-  First, download the required dataset from [Hugging Face](https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main) and place it in the data folder.
+  First, download the required dataset from [Hugging Face](https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main) and place it in the `data` folder.
 
   Next, We use [KaHIP](https://github.com/KaHIP/KaHIP), a graph partitioning framework, to partition the road network. First, we need to install KaHIP by executing the following commands in the terminal:
 
