@@ -1,4 +1,4 @@
-## <center>Holistic Semantic Representation for Navigational Trajectory Generation</center>
+## <div align="center"> Holistic Semantic Representation for Navigational Trajectory Generation </div>
 
 <div align="center">
 
