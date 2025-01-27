@@ -1,10 +1,11 @@
 ## <center>Holistic Semantic Representation for Navigational Trajectory Generation</center>
 
-<center>
+<div align="center">
 
-  <a href="https://arxiv.org/abs/2501.02737" target="_blank"><img src="https://img.shields.io/static/v1?label=arXiv&message=2501.02737&color=a42c25&logo=arXiv"></a> &ensp;
-  <a href="https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main" target="_blank"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=f8d44e"></a> &ensp;
-</center>
+  <a href="https://arxiv.org/abs/2501.02737"><img src="https://img.shields.io/static/v1?label=arXiv&message=2501.02737&color=a42c25&logo=arXiv"></a> &ensp;
+  <a href="https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=f8d44e"></a> &ensp;
+
+</div>
 
 This is the official implementation of paper "Holistic Semantic Representation for Navigational Trajectory Generation" [[arXiv](https://arxiv.org/abs/2501.02737)].
 
