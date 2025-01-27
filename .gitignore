@@ -1,0 +1,10 @@
+__pycache__/
+/KaHIP
+/log
+/save
+/tensorboard_log
+/gene
+/*.sh
+/data/Beijing/*
+/data/Porto/*
+/data/San_Francisco/*

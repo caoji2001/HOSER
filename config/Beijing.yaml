@@ -1,0 +1,43 @@
+road_network_encoder_config:
+  road_id_emb_dim: 64
+  len_emb_dim: 16
+  type_emb_dim: 16
+  lon_emb_dim: 16
+  lat_emb_dim: 16
+  intersection_emb_dim: 128
+  zone_id_emb_dim: 128
+  # determined at runtime
+  road_id_num_embeddings:
+  # determined at runtime
+  type_num_embeddings:
+  zone_id_num_embeddings: 300
+
+# determined at runtime
+road_network_encoder_feature:
+  road_attr:
+    len:
+    type:
+    lon:
+    lat:
+  road_edge_index:
+  intersection_attr:
+  zone_edge_index:
+  zone_edge_weight:
+
+trajectory_encoder_config:
+  hidden_dim: 128
+  num_heads: 2
+  num_layers: 2
+  dropout: 0.0
+  max_len: 2000
+
+navigator_config:
+  hidden_dim: 128
+
+optimizer_config:
+  max_epoch: 25
+  batch_size: 256
+  learning_rate: 0.001
+  weight_decay: 0.1
+  warmup_ratio: 0.1
+  max_norm: 1.0
