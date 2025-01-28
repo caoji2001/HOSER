@@ -40,7 +40,7 @@ loguru
   
   First, download the required dataset from [Hugging Face](https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main) and place it in the `data` folder.
 
-  Next, We use [KaHIP](https://github.com/KaHIP/KaHIP), a graph partitioning framework, to partition the road network. First, we need to install KaHIP by executing the following commands in the terminal:
+  Next, We use [KaHIP](https://github.com/KaHIP/KaHIP), a graph partitioning framework, to partition the road network. Install KaHIP by running the following commands in your terminal:
 
   ```console
   git clone --branch v3.17 https://github.com/KaHIP/KaHIP.git
