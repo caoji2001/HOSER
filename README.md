@@ -27,7 +27,7 @@ tqdm
 PyYAML
 numpy
 pandas
-sklearn
+scikit-learn
 shapely
 tensorboard
 haversine
