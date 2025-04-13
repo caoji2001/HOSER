@@ -2,8 +2,9 @@
 
 <div align="center">
 
+  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/31978"><img src="https://img.shields.io/badge/AAAI-2025-blue.svg"></a> &ensp;
   <a href="https://arxiv.org/abs/2501.02737"><img src="https://img.shields.io/static/v1?label=arXiv&message=2501.02737&color=a42c25&logo=arXiv"></a> &ensp;
-  <a href="https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main"><img src="https://img.shields.io/static/v1?label=Dataset&message=HuggingFace&color=f8d44e"></a> &ensp;
+  <a href="https://huggingface.co/datasets/caoji2001/HOSER-dataset/tree/main"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Dataset&color=ffc107"></a>
 
 </div>
 
