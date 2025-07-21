@@ -317,10 +317,10 @@ if __name__ == '__main__':
 
     # Prepare OD matrix
 
-    test_traj = pd.read_csv(test_traj_file)
+    train_traj = pd.read_csv(train_traj_file)
 
     od_mat = np.zeros((num_roads, num_roads), dtype=np.float32)
-    for _, row in test_traj.iterrows():
+    for _, row in train_traj.iterrows():
         rid_list = eval(row['rid_list'])
         origin_id = rid_list[0]
         destination_id = rid_list[-1]
@@ -331,8 +331,6 @@ if __name__ == '__main__':
     od_probabilities = od_flat / np.sum(od_flat)
 
     # Generating trajectories
-
-    train_traj = pd.read_csv(train_traj_file)
 
     timestamp_label_array = []
     for _, row in train_traj.iterrows():
