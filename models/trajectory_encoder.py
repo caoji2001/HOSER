@@ -92,11 +92,16 @@ class Block(nn.Module):
 class TemporalEncoder(nn.Module):
     def __init__(self, hidden_dim):
         super(TemporalEncoder, self).__init__()
+        self.hidden_dim = hidden_dim
 
-        self.time_emb = nn.Linear(1, hidden_dim)
-     
+        self.freqs = nn.Parameter(torch.randn(hidden_dim // 2))
+
     def forward(self, temporal_info):
-        return torch.cos(self.time_emb(temporal_info.unsqueeze(-1)))
+        t = temporal_info.unsqueeze(-1)
+        x = t * self.freqs
+        emb = torch.cat([torch.cos(x), torch.sin(x)], dim=-1)
+        emb = emb * math.sqrt(1.0 / (2 * self.hidden_dim))
+        return emb
 
 
 class TrajectoryEncoder(nn.Module):
