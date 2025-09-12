@@ -79,6 +79,10 @@ loguru
   * `--num_gene` specifies the number of trajectories to generate
   * `--processes` specifies the number of processes to use when generating trajectories in parallel
 
+* Model Evaluation
+
+  Please refer to `evaluation/main.ipynb`.
+
 ### Citation
   If our work contributes to your research, please consider citing it:
 
