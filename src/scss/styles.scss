@@ -1,1 +1,53 @@
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 860px,
+  xl: 900px,
+  xxl: 900px
+);
 @import "bootstrap/scss/bootstrap";
+
+.vis-group {
+  margin-bottom: 2rem;
+
+  .vis-group-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $gray-600;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.vis-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  background: #fff;
+
+  img,
+  iframe {
+    display: block;
+    width: 100%;
+  }
+
+  // Hide the Google Maps embed title bar
+  iframe {
+    margin-top: -56px;
+  }
+}
+
+.vis-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  pointer-events: none;
+  z-index: 1;
+}
